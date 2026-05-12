@@ -7,14 +7,14 @@ import Reveal from "@/components/Reveal";
 import SectionNav from "@/components/SectionNav";
 import CopyEmail from "@/components/CopyEmail";
 import SeasonPicker from "@/components/SeasonPicker";
-import LanguagePicker from "@/components/LanguagePicker";
+
 import ProjectModal, {
   type ProjectDetail,
 } from "@/components/ProjectModal";
 import { useLanguage } from "@/components/LanguageProvider";
 import type { Lang } from "@/lib/i18n";
 
-const EMAIL = "josemariaalberobelamendia@gmail.com";
+const EMAIL = "nikkitachoudhary306@gmail.com";
 
 // Localised content lives in `{ es, en }` objects inside these arrays so the
 // page can be a straightforward array.map() at render time. Tech names stay
@@ -184,12 +184,11 @@ const experiences: Array<{
   stack: string[];
 }> = [
   {
-    role: { es: "Tech Lead", en: "Tech Lead" },
+    role: {  en: "Tech Lead" },
     company: "Activalink",
     period: { es: "2023 — Presente", en: "2023 — Present" },
     location: { es: "Alcoy, España", en: "Alcoy, Spain" },
     summary: {
-      es: "Activalink implementa y adapta ERPs para pymes y grandes empresas. Desarrollo módulos y personalizaciones custom sobre Odoo, integraciones a medida y proyectos de implantación llave en mano. Lidero un equipo de 3 desarrolladores: nuestro trabajo se mide en tiempo ahorrado y errores evitados.",
       en: "Activalink implements and customises ERPs for SMBs and large companies. I build custom modules and personalisations on top of Odoo, bespoke integrations, and end-to-end implementation projects. I lead a team of 3 developers: our work is measured in time saved and errors avoided.",
     },
     bullets: [
@@ -210,7 +209,7 @@ const experiences: Array<{
         en: "Financial dashboards — early detection of uninvoiced orders.",
       },
     ],
-    stack: ["Odoo", "Python", "PostgreSQL", "Next.js", "TypeScript", "Docker"],
+    stack: ["css", "PostgreSQL", "Next.js", "TypeScript", "Docker"],
   },
 ];
 
@@ -255,7 +254,7 @@ export default function Home() {
               data-cursor="hover"
               className="text-sm font-semibold tracking-tight text-ice-100"
             >
-              Txema Albero
+              Nirmala Choudhary
             </span>
             <span className="status-pill hidden sm:inline-flex">
               {t("header.availability")}
@@ -264,7 +263,7 @@ export default function Home() {
           <div className="flex items-center gap-2 pointer-events-auto">
             <SeasonPicker />
             <a
-              href="https://github.com/Txemalon/3d-portfolio"
+              href="https://github.com/nikita1-pixel"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="hover"
@@ -275,7 +274,6 @@ export default function Home() {
               </svg>
               <span>GitHub</span>
             </a>
-            <LanguagePicker />
           </div>
         </header>
 
@@ -295,9 +293,9 @@ export default function Home() {
                 {t("hero.greeting")}
               </p>
               <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[8.5rem] font-bold tracking-[-0.03em] text-ice-50 leading-[0.92] whitespace-nowrap">
-                <HeroWord text="Txema" delay={120} />
+                <HeroWord text="Nirmala" delay={120} />
                 <br />
-                <HeroWord text="Albero" delay={260} className="text-ice-400" />
+                <HeroWord text="Choudhary" delay={260} className="text-ice-400" />
               </h1>
               <p
                 className="mt-8 text-base sm:text-lg md:text-xl text-ice-200 max-w-xl leading-relaxed fade-in-up"
@@ -343,7 +341,7 @@ export default function Home() {
                   {t("hero.hire")}
                 </button>
                 <a
-                  href="https://github.com/Txemalon"
+                  href="https://github.com/nikita1-pixel"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="hover"
@@ -356,7 +354,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://es.linkedin.com/in/jose-mar%C3%ADa-albero-belamendia-b9319a246"
+                  href="https://www.linkedin.com/in/nirmalachoudharyou/"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="hover"
@@ -369,7 +367,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://x.com/Txemalon"
+                  href="https://x.com/_nikieee"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="hover"
@@ -644,7 +642,7 @@ export default function Home() {
                     {t("contact.openMail")}
                   </a>
                   <a
-                    href="https://github.com/Txemalon"
+                    href="https://github.com/nikita1-pixel"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-cursor="hover"
@@ -653,7 +651,7 @@ export default function Home() {
                     {t("contact.github")}
                   </a>
                   <a
-                    href="https://es.linkedin.com/in/jose-mar%C3%ADa-albero-belamendia-b9319a246"
+                    href="https://www.linkedin.com/in/nirmalachoudharyou/"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-cursor="hover"
